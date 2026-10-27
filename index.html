@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <img src="./logo.svg" class="logo" alt="logo" />
+
+      <nav>
+        <ul class="nav-left">
+          <li>準備出發</li>
+          <li>歡迎登機</li>
+          <li>虎迷優惠</li>
+          <li>虎迷須知</li>
+        </ul>
+
+        <ul class="nav-right">
+          <li><i class="iconoir-search"></i><span>航班搜尋</span></li>
+          <li><i class="iconoir-user"></i><span>登入註冊</span></li>
+          <li><i class="iconoir-language"></i><span>繁中</span></li>
+          <li><i class="iconoir-dollar-circle"></i><span>TWD</span></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner"></div>
+      <div class="card">
+        <nav>
+          <ul class="card-nav">
+            <li class="card-nav-border-bottom">
+              <i class="iconoir-airplane"></i>航班
+            </li>
+            <li><i class="iconoir-credit-card"></i>樂虎卡</li>
+            <li>虎加酒</li>
+            <li>虎里轉</li>
+          </ul>
+        </nav>
+        <form action="" class="flight-search d-flex g-4 pt-4">
+          <div class="trip">
+            <i class="iconoir-arrow-separate"></i
+            ><select class="border-none" name="" id="">
+              <option value="">來回</option>
+              <option value="">單程</option>
+              <option value="">不同點</option>
+            </select>
+          </div>
+          <div class="originSelect">
+            <div class="origin">
+              <label for="origin"></label>
+              <input
+                type="text"
+                id="origin"
+                name="origin"
+                placeholder="出發地"
+              />
+            </div>
+            <div class="destination">
+              <label for="destination"></label>
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="目的地"
+              />
+            </div>
+          </div>
+          <div class="dateSelect">
+            <div class="departureDateSelect">
+              <label class="fz-3 mr-8" for="departureDate">去程出發日期</label>
+              <input type="date" id="departureDate" />
+            </div>
+            <i class="iconoir-arrow-right"></i>
+            <div class="returnDateSelect">
+              <label class="fz-3 mr-8" for="returnDate">回程出發日期</label>
+              <input type="date" id="returnDate" />
+            </div>
+            <!-- <i class="iconoir-calendar"></i> -->
+          </div>
+
+          <div class="passanger">
+            <label class="fz-3" for="passanger">旅客人數</label>
+            <select class="border-none" name="" id="passanger">
+              <option value="">1成人 - 0兒童 - 0嬰兒</option>
+            </select>
+          </div>
+        </form>
+        <div class="d-flex jcsb pt-4">
+          <div class="d-flex aic">
+            <i class="iconoir-label"></i>
+            <label for="coupon"></label>
+            <input type="text" id="coupon" placeholder="加入促銷代碼" />
+          </div>
+
+          <button>搜尋</button>
+        </div>
+      </div>
+      <div>
+        <ul class="quick-links">
+          <li><img src="./order.png" alt="" />管理訂單</li>
+          <li><img src="./flight.png" alt="" />自助報到</li>
+          <li><img src="./calendar.png" alt="" />航班動態</li>
+          <li><img src="./cart.png" alt="" />免稅品購買</li>
+          <li><img src="./qa.png" alt="" />常見問題</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
